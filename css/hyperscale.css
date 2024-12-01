@@ -7,7 +7,7 @@
 /* ============= */
 
 html {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: 'Campton Book', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 14px;
     height: 100%;
     max-width: 100%;
@@ -321,6 +321,11 @@ img.hc_hero_pic {
 /* ============= */
 
 .about_area {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
     position: relative;
     min-height: 720px;
     height: auto;
@@ -328,8 +333,282 @@ img.hc_hero_pic {
     padding: 88px 0 88px 0;
 
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), linear-gradient(180deg, #F9F9F9 0%, #F4F7F7 97.03%);
-
 }
+
+.visuals {
+    position: relative;
+}
+
+.ripple {
+    position: relative;
+    width: 100%;
+    height: 518px;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.chip {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 464px;
+    object-fit: contain;
+    z-index: 5;
+}
+
+section.title {
+    margin-bottom: 46px;
+}
+
+span.ttl_deco {
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height: 4px;
+    background: url("../img/title_deco.svg") center center no-repeat;
+}
+
+h2.section_ttl {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 2.571rem;
+    color: #000000;
+}
+
+article.hc_article .left_aligned {
+    text-align: left;
+}
+
+p.hc_para {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 1.286rem;
+    color: #414141;
+    margin-bottom: 24px;
+}
+
+
+
+
+/* ============= */
+/* =========== STATS =========== */
+/* ============= */
+
+.stats_area {
+    position: relative;
+    min-height: 910px;
+    height: auto;
+    width: 100%;
+    background: #ffffff;
+    padding: 88px 0 88px 0;
+}
+
+.center_aligned {
+    text-align: center;
+}
+
+.mapusa {
+    display: flex;
+    justify-self: center;
+    position: absolute;
+    width: 100%;
+    height: 565px;
+    top: 26%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background: url("../img/mapusa.svg") center center no-repeat;
+}
+
+.stat_box_outermost {
+    padding-top: 46px;
+    position: relative;
+}
+
+.solo_state_outermost {
+   border-right: 1px solid rgba(115, 155, 157, 0.53);
+}
+
+.solo_state_outermost:last-child {
+    border-right: 1px solid transparent;
+}
+
+.solo_stat {
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
+.statbox {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 4;
+    min-height: 255px;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 9px 250px rgba(0, 0, 0, 0.09);
+}
+
+h3.numerical {
+    font-size: 4.429rem;
+    font-weight: 700;
+    text-align: center;
+    color: #FCB94D;
+}
+
+h4.info {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    color: #414141;
+}
+
+.stat_cta_holder {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 360px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* ============= */
+/* =========== ADVANTAGES =========== */
+/* ============= */
+
+.advantages_area {
+    min-height: 845px;
+    height: auto;
+    width: 100%;
+    padding: 88px 0 88px 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), #F4F7F7;
+}
+
+.adv_cards_row {
+    padding-top: 46px;
+}
+
+.adv_card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 410px;
+    height: auto;
+    width: 100%;
+    padding: 34px;
+    background: #FFFFFF;
+    border-radius: 20px;
+
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.05);
+}
+
+.adv_icon {
+    position: relative;
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.adv_icon.one {background: #FCF7EE;}
+.adv_icon.two {background: #EEFFF4;}
+.adv_icon.three {background: #F3F2FB;}
+.adv_icon.four {background: #F4F7F7;}
+
+
+
+
+img.adv_icon {
+    position: relative;
+    width: 32px;
+    object-fit: contain;
+}
+
+h4.adv_title {
+    font-size: 1.571rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+
+p.adv_text {
+    font-size: 1.286rem;
+    font-weight: 400;
+    color: #414141;
+    text-align: center;
+}
+
+
+
+
+
+/* ============= */
+/* =========== ADVANTAGES =========== */
+/* ============= */
+
+.contact_area {
+    min-height: 1025px;
+    height: auto;
+    width: 100%;
+    background: #ffffff;
+    padding: 88px 0 88px 0;
+}
+
+form.hc_form {
+    position: relative;
+    width: 100%;
+    height: 612px;
+    padding: 48px;
+
+    background: linear-gradient(124.64deg, #E2EBEB 18.65%, #CDDDDD 120.26%);
+    box-shadow: 0 5px 250px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+}
+
+input.hc_input {
+    height: 50px;
+    background: #ffffff;
+    border: none !important;
+    padding-left: 18px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+textarea.hc_txt {
+    background: #ffffff;
+    padding-left: 18px;
+    padding-top: 12px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 1rem;
+    border: none !important;
+    height: 200px;
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 
