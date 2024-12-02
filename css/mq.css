@@ -146,7 +146,7 @@
     .solo_state_outermost {border-right: none;}
 
     .solo_stat {
-        border-bottom: 1px solid rgba(115, 155, 157, 0.53);
+        border-bottom: 1px solid rgba(115, 155, 157, 0.33);
         width: 80%;
         margin: 0 auto;
         padding-top: 22px;

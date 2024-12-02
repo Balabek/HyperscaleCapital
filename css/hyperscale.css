@@ -426,7 +426,7 @@ p.hc_para {
 }
 
 .solo_state_outermost {
-   border-right: 1px solid rgba(115, 155, 157, 0.53);
+   border-right: 1px solid rgba(115, 155, 157, 0.33);
 }
 
 .solo_state_outermost:last-child {
