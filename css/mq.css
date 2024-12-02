@@ -71,30 +71,153 @@
 /* =========== PARTNERS =========== */
 /* ============= */
 
+@media screen and (max-width: 767px){
+    .partner-logo {
+        margin-bottom: 20px;
+    }
+
+    .partners_area {
+        padding-top: 32px;
+        padding-bottom: 22px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .partners_area .row > div {
+        flex: 0 0 100%; /* Force each column to take the full width */
+        max-width: 100%;
+        margin-bottom: 15px; /* Add spacing between logos */
+    }
+
+    .partner-logo {
+        max-width: 150px; /* Optional: Adjust logo size if needed */
+        margin: 0 auto; /* Center logos horizontally */
+        margin-bottom: 16px;
+    }
+}
 
 
 
 
 
+/* ============= */
+/* =========== WHO WE ARE =========== */
+/* ============= */
+
+@media screen and (max-width: 575px){
+    .about_textuals_outermost {padding-top: 50px;}
+
+    .about_area {padding: 26px 26px 26px 26px;}
+
+    .visuals {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ripple {
+        height: 90vh;
+        width: 90vw;
+    }
+
+    .chip {
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 444px){
+    .about_textuals_outermost {padding-top: 20px;}
+    p.hc_para {font-size: 1.12rem;}
+    h2.section_ttl {font-size: 2.3rem;}
+}
 
 
 
 
 
+/* ============= */
+/* =========== STATS =========== */
+/* ============= */
+
+@media screen and (max-width: 767px){
+    .stats_area {min-height: 1100px;}
+
+    .solo_state_outermost {border-right: none;}
+
+    .solo_stat {
+        border-bottom: 1px solid rgba(115, 155, 157, 0.53);
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+
+    .solo_state_outermost:last-child .solo_stat {
+        border-bottom: none;
+    }
+
+    .stat_cta_holder {
+        position: relative;
+        top: 575px;
+        padding-left: 22px;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .stat_cta_holder {top: 600px;}
+}
+
+@media screen and (max-width: 365px){
+    .stats_area {min-height: 1200px;}
+    .stat_cta_holder {top: 670px;}
+}
+
+
+
+
+/* ============= */
+/* =========== ADVANTAGES =========== */
+/* ============= */
+
+@media screen and (max-width: 1199px){
+    .adv_card {margin-bottom: 36px;}
+}
+
+@media screen and (max-width: 767px){
+    .adv_card {min-height: 200px;}
+}
+
+@media screen and (max-width: 555px){
+    p.adv_text {font-size: 1.1rem;}
+}
 
 
 
 
 
+/* ============= */
+/* =========== CONTACT =========== */
+/* ============= */
+
+@media screen and (max-width: 575px){
+    form.hc_form {padding: 12px 22px 12px 22px;}
+}
 
 
 
+/* ============= */
+/* =========== FOOTER =========== */
+/* ============= */
 
+@media screen and (max-width: 555px){
+    footer.hc_footer {min-height: 550px;}
+    ul.hc_footer_menu li {float: none; margin-right: 0; margin-bottom: 16px;}
+    .footer_logo {height: 45px;}
+    small.footer_note {font-size: 0.9rem;}
 
-
-
-
-
+}
 
 
 
